@@ -1,5 +1,5 @@
 import express from 'express'
-import productsRouter from './routes/products/index.ts'
+import productsRouter from './routes/products/index'
 
 const port = 3000
 const app = express()
