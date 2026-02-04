@@ -12,7 +12,8 @@
     "build": "tsc",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
-    "db:studio": "drizzle-kit studio"
+    "db:studio": "drizzle-kit studio",
+    "run:build": "node --env-file=.env dist/src/index.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.3",

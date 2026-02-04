@@ -1,10 +1,10 @@
 import {Router} from 'express'
-import { listProducts, createProduct, updateProduct, getProductById, deleteProduct } from './productsController'
-import { validateData } from '../../middlewares/validationMiddleware'
+import { listProducts, createProduct, updateProduct, getProductById, deleteProduct } from './productsController.js'
+import { validateData } from '../../middlewares/validationMiddleware.js'
 import {z} from 'zod'
 import { createSelectSchema, createInsertSchema } from 'drizzle-zod';
-import { productsTable } from '../../db/productsSchema';
-import { verifySeller, verifyToken } from '../../middlewares/authMiddleware';
+import { productsTable } from '../../db/productsSchema.js';
+import { verifySeller, verifyToken } from '../../middlewares/authMiddleware.js';
 
 
 const createProductSchhema = createInsertSchema(productsTable)
