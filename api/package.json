@@ -15,11 +15,18 @@
     "db:studio": "drizzle-kit studio"
   },
   "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "drizzle-zod": "^0.8.3",
     "express": "^5.2.1",
-    "pg": "^8.18.0"
+    "jsonwebtoken": "^9.0.3",
+    "lodash": "^4.17.23",
+    "pg": "^8.18.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/lodash": "^4.17.23",
     "@types/pg": "^8.16.0",
     "drizzle-kit": "^0.31.8",
     "drizzle-orm": "^0.45.1",
